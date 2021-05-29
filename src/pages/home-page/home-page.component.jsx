@@ -2,6 +2,7 @@ import React from 'react';
 
 import Header from '../../components/header/header.component';
 
+
 import './home-page.styles.scss';
 
 const HomePage = () => {

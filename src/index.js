@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import { ApolloProvider } from 'react-apollo';
+import { ApolloProvider } from '@apollo/react-hooks';
 import { createHttpLink } from 'apollo-link-http';
 import { InMemoryCache, inMemoryCache } from 'apollo-cache-inmemory';
 import { ApolloClient } from 'apollo-boost';
@@ -19,6 +19,7 @@ const client = new ApolloClient({
   link: httpLink,
   cache
 });
+
 
 ReactDOM.render(
   <React.StrictMode>

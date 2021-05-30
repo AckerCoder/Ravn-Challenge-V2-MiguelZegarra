@@ -1,3 +1,30 @@
 .data-cell{
-    width: 80vw;
+    width: 60vw;
+    padding: 1em 5em;
+    display: flex;
+    flex-direction: column;
+    .general-information{
+        width: 100%;    
+    }
+    .section-information{
+        width: 60vw;
+        display: flex;
+        justify-content: space-between;
+        border-bottom-style: solid;
+        border-bottom-color: rgba(0, 0, 0, 0.1);
+        border-bottom-width: 1px;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-right: 1em;
+        .tag-info{
+            color: #828282;
+        }
+        .vehicle-name{
+            color: #828282;
+        }
+        .info{
+            color: #121212;
+        }    
+    }
+    
 }

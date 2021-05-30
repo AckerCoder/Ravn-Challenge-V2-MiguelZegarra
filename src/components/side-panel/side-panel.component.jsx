@@ -44,6 +44,7 @@ const SidePanel = () => {
                                             name = {person.name} 
                                             specie = {person.species.name} 
                                             homeworld = {person.homeworld.name}
+                                            id = {person.id}
                                         />
                                     )
                                 }else{
@@ -52,6 +53,7 @@ const SidePanel = () => {
                                             name = {person.name}
                                             specie = "Human" 
                                             homeworld = {person.homeworld.name}
+                                            id = {person.id}
                                         />
                                     )
                                 }

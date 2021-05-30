@@ -1,8 +1,8 @@
-import {gql} from '@apollo/client';
+import {gql} from 'apollo-boost';
 
 export const GET_PEOPLE = gql`
-  query people($first: Int = 5,$after: String = null){
-    allPeople(after: $after,first:$first){
+  query people($limit: Int,$after: String = null){
+    allPeople(after: $after,first: $limit){
       people{
         id
         name
@@ -17,8 +17,6 @@ export const GET_PEOPLE = gql`
         endCursor
         hasNextPage
       }
-    }
-        
+    } 
   }
-  
 `

@@ -4,7 +4,7 @@ import { AppContext } from '../../contexts/provider.component';
 import './data-cell.styles.scss';
 
 import {GET_PERSON} from '../../queries/person.query'
-import { useQuery } from 'react-apollo';
+import { useQuery } from '@apollo/client';
 
 const capitalize = (unformalString) => {
     if (typeof unformalString !== 'string') return ''
@@ -15,7 +15,7 @@ const capitalize = (unformalString) => {
 const DataCell = () => {
 
     const [currentPerson, setCurrentPerson] = useContext(AppContext);
-    const {loading, error, data} = useQuery(GET_PERSON, {variables:{id: currentPerson}});
+    const {data} = useQuery(GET_PERSON, {variables:{id: currentPerson}});
 
     const current = data?data.person:null;
 

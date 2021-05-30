@@ -1,0 +1,11 @@
+.custom-button{
+    img{
+        width: 1em;
+        height: 1em;
+    }
+    border: none;
+    background: none;
+    :hover{
+        cursor: pointer;
+    }
+}

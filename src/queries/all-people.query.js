@@ -2,7 +2,7 @@ import {gql} from '@apollo/client';
 
 export const GET_PEOPLE = gql`
   query people($first: Int = 5,$after: String = null){
-    allPeople(first:$first,after: $after){
+    allPeople(after: $after,first:$first){
       people{
         id
         name

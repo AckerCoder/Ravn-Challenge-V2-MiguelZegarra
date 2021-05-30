@@ -1,0 +1,13 @@
+.person-cell{
+    display: flex;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+    border-bottom-width: 1px;
+    padding-left: 1em;
+    padding-right: 1em;
+    justify-content: space-between;
+    .person-information{
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -23,11 +23,12 @@ const SidePanel = () => {
                     after: data.allPeople.pageInfo.endCursor
                 },
                 updateQuery: (prev, {fetchMoreResult}) => {
+                    setFinish(fetchMoreResult.allPeople.pageInfo.hasNextPage);
+                    if(!fetchMoreResult.allPeople.pageInfo.hasNextPage)return prev
                     fetchMoreResult.allPeople.people = [
                         ...prev.allPeople.people,
                         ...fetchMoreResult.allPeople.people
                     ];
-                    setFinish(fetchMoreResult.allPeople.pageInfo.hasNextPage);
                     return fetchMoreResult;
                 }
             })

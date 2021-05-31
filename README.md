@@ -1,70 +1,156 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/AckerCoder/Ravn-Challenge-V2-Miguel-Zegarra">
+    <img src="./src/assets/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-## Available Scripts
+  <h3 align="center">Hi! This is a challenge made by Miguel Zegarra for Ravn</h3>
 
-In the project directory, you can run:
+  <p align="center">
+    The challenge was about of building an app with GraphQL, Apollo and other optional technologies. The app is a Star Wars Character Registry powered by https://swapi-graphql.netlify.app/ I have chosen ReactJS for a bunch reasons, but the most important is because it's very simple to compile and do some changes while you are working with an API.
+    <br />
+    <br />
+    <br />
+  </p>
+</p>
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- ABOUT THE PROJECT -->
+## About The Project
+We use React and Apollo to build a powerful Star Wars Registry!
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Built With
 
-### `yarn test`
+* [ReactJS](https://reactjs.org/)
+* [Apollo Client](https://www.apollographql.com/)
+* [GraphQL](https://graphql.org/)
+* [SCSS](https://sass-lang.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- GETTING STARTED -->
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To get a local copy up and running follow these simple steps.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
+You must have npm or yarn installed to run this project.
 
-### `yarn eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Clone the repo
+```sh
+git clone https://github.com/AckerCoder/Ravn-Challenge-V2-Miguel-Zegarra.git
+```
+2. Install packages
+```sh
+yarn install
+```
+3. Run the project
+```sh
+yarn start
+```
+### Project Structure
+ ```
+  src
+  |   App.css
+  |   App.js
+  |   App.test.js
+  |   index.css
+  |   index.js
+  |   reportWebVitals.js
+  |   setupTests.js
+  |   tree.txt
+  |   
+  +---assets
+  |       arrow.svg
+  |       errorMessage.gif
+  |       loadingAllPeople.gif
+  |       loadingPersonDetails.gif
+  |       logo.png
+  |       
+  +---components
+  |   +---custom-button
+  |   |       custom-button.component.jsx
+  |   |       custom-button.styles.scss
+  |   |       
+  |   +---data-cell
+  |   |       data-cell.component.jsx
+  |   |       data-cell.styles.scss
+  |   |       
+  |   +---header
+  |   |       header.component.jsx
+  |   |       header.styles.scss
+  |   |       
+  |   +---loading-cell
+  |   |       loading-cell.component.jsx
+  |   |       loading-cell.styles.scss
+  |   |       
+  |   +---notice-cell
+  |   |       notice-cell.component.jsx
+  |   |       notice-cell.styles.scss
+  |   |       
+  |   +---person-cell
+  |   |       person-cell.component.jsx
+  |   |       person-cell.styles.scss
+  |   |       
+  |   +---side-panel
+  |   |       side-panel.component.jsx
+  |   |       side-panel.styles.scss
+  |   |       
+  |   \---spinner
+  |           spinner.component.jsx
+  |           spinner.styles.scss
+  |           
+  +---contexts
+  |       provider.component.jsx
+  |       
+  +---pages
+  |   \---home-page
+  |           home-page.component.jsx
+  |           home-page.styles.scss
+  |           
+  +---queries
+  |       all-people.query.js
+  |       person.query.js
+  |       
+  \---utils
+          capitalize.utils.js
+ ```
+This structure help us to keep the code clean and easy to modify if we want to. We cam modify the styles of each component without affecting others. This give us scability when if the project is going to grow in the future.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<!-- USAGE EXAMPLES -->
+## Results
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Loading the preview of all the characters.
+<br/>
+<br/>
+<img src="src/assets/loadingAllPeople.gif" alt="Logo" width="800" height="400">
+<br/>
+<br/>
+<br/>
+2. Loading the person details.
+<br/>
+<br/>
+<img src="src/assets/loadingPersonDetails.gif" alt="Logo" width="800" height="400">
+<br/>
+<br/>
+<br/>
+3. We get an error message if we miss an internet connection or the API returns some error.
+<br/>
+<br/>
+<img src="src/assets/errorMessage.gif" alt="Logo" width="800" height="400">
+<br/>
+<br/>
+<br/>
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Asumptions
+1. We set the position of some components fixed to get an interface more friendly.
+2. We use two queries to get only the data that is needed accordingly with what the user wants to fetch.
+3. We use React Hooks to handle the queries on the render methods to avoid unnecesary re rendering.
+<br/>
+<br/>
+<br/>

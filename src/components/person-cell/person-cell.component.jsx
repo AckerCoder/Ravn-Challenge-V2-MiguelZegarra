@@ -5,14 +5,14 @@ import './person-cell.styles.scss';
 import arrow from "../../assets/arrow.svg"
 
 
-const PersonCell = (props) => {
+const PersonCell = ({id, name, specie, homeworld}) => {
     return(
         <div className="person-cell">
             <div className="person-information">
-                <span className="name">{props.name}</span>
-                <span className="details">{props.specie} from {props.homeworld}</span>
+                <span className="name">{name}</span>
+                <span className="details">{specie} from {homeworld}</span>
             </div>
-            <CustomButton image={arrow} name={props.name} id={props.id}/>
+            <CustomButton image={arrow} name={name} id={id}/>
         </div>
     )
 }

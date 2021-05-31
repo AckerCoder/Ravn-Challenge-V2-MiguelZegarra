@@ -5,15 +5,9 @@ import './data-cell.styles.scss';
 
 import {GET_PERSON} from '../../queries/person.query'
 import { useQuery } from '@apollo/client';
-
-const capitalize = (unformalString) => {
-    if (typeof unformalString !== 'string') return ''
-    return unformalString.charAt(0).toUpperCase() + unformalString.slice(1)
-}
-
+import {capitalize} from '../../utils/capitalize.utils'
 
 const DataCell = () => {
-
     const [currentPerson] = useContext(AppContext);
     const {data} = useQuery(GET_PERSON, {variables:{id: currentPerson}});
 

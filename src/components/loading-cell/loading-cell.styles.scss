@@ -2,13 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20vw;
+    width: 25vw;
     border-right-style: solid;
     border-right-width: 1px;
-    border-right-color: rgba(0, 0, 0, 0.1);
+    border-right-color: var(--Margin-Color);
     height: 10%;
     span{
-        color: #828282;
+        color: var(--Text-Light);
         font-weight: 700; 
     }
 }

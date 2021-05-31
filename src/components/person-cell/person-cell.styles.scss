@@ -1,20 +1,25 @@
 .person-cell{
     display: flex;
     border-bottom-style: solid;
-    border-bottom-color: rgba(0, 0, 0, 0.1);
+    border-bottom-color: var(--Margin-Color);
     border-bottom-width: 1px;
     padding-left: 1em;
     padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     justify-content: space-between;
     border-right-style: solid;
     border-right-width: 1px;
-    border-right-color: rgba(0, 0, 0, 0.1);
+    border-right-color: var(--Margin-Color);
     .person-information{
         display: flex;
         flex-direction: column;
+        .name{
+            font-weight: 700;
+        }
         .details{
             font-weight: 400;
-            color: #828282;
+            color: var(--Text-Light);
         }
     }
 }

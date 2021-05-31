@@ -32,7 +32,7 @@ const SidePanel = () => {
                 }
             })
     }
-    useEffect(() => onFetch(), [data]);
+    useEffect(() => onFetch());
     return (
         <div className="side-panel">
             {
@@ -56,7 +56,6 @@ const SidePanel = () => {
                 error?<NoticeCell/>:null
             }
         </div>
-
     );
 }
 

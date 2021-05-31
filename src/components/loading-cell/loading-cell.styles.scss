@@ -1,0 +1,14 @@
+.loading-cell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: rgba(0, 0, 0, 0.1);
+    height: 10%;
+    span{
+        color: #828282;
+        font-weight: 700; 
+    }
+}

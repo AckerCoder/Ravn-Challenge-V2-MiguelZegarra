@@ -6,8 +6,15 @@
     padding-left: 1em;
     padding-right: 1em;
     justify-content: space-between;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: rgba(0, 0, 0, 0.1);
     .person-information{
         display: flex;
         flex-direction: column;
+        .details{
+            font-weight: 400;
+            color: #828282;
+        }
     }
 }

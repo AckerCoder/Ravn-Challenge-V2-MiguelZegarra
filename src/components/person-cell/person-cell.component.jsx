@@ -10,7 +10,7 @@ const PersonCell = (props) => {
         <div className="person-cell">
             <div className="person-information">
                 <span className="name">{props.name}</span>
-                <span className="name">{props.specie} from {props.homeworld}</span>
+                <span className="details">{props.specie} from {props.homeworld}</span>
             </div>
             <CustomButton image={arrow} name={props.name} id={props.id}/>
         </div>

@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 import { ApolloProvider } from '@apollo/react-hooks';
 import { createHttpLink } from 'apollo-link-http';
-import { InMemoryCache, inMemoryCache } from 'apollo-cache-inmemory';
+import { InMemoryCache } from 'apollo-cache-inmemory';
 import { ApolloClient } from 'apollo-boost';
 
 const httpLink = createHttpLink({

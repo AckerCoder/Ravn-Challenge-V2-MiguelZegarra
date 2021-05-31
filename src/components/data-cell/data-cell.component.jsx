@@ -14,7 +14,7 @@ const capitalize = (unformalString) => {
 
 const DataCell = () => {
 
-    const [currentPerson, setCurrentPerson] = useContext(AppContext);
+    const [currentPerson] = useContext(AppContext);
     const {data} = useQuery(GET_PERSON, {variables:{id: currentPerson}});
 
     const current = data?data.person:null;

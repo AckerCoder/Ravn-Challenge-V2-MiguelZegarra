@@ -3,7 +3,7 @@ import {AppContext} from '../../contexts/provider.component';
 
 import './custom-button.styles.scss';
 
-const CustomButton = ({image, name, id}) => {
+const CustomButton = ({image, id}) => {
     const [currentPerson, setCurrentPerson] = useContext(AppContext);
     const handleClick = (e) => {
         e.preventDefault();
@@ -12,7 +12,7 @@ const CustomButton = ({image, name, id}) => {
 
     return(
         <button className="custom-button" onClick={handleClick}>
-            <img src={image} alt={name}/>            
+            <img src={image} alt={currentPerson}/>            
         </button>
     )
 };
